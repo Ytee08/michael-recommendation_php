@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index_style.css">
     <title>Document</title>
-    <script>
+    <!-- <script>
     document.addEventListener('DOMContentLoaded', function() {
         const form = document.querySelector('form');
         const welcomeTitle = document.querySelector('.container h1');
@@ -29,13 +29,20 @@
             }, 800);
         });
     });
-    </script>
+    </script> -->
 </head>
 <body>
     <div class="page-wrapper">
         <div class="container">
-            <h1>Hello</h1>
-            <p>Welcome who do you recommend</p>
+            <?php 
+            if(isset($_GET['success']) && $_GET['success'] == 1) {
+                echo '<h1>Thank You!</h1>';
+                echo '<p>For your recommendation</p>';
+            } else {
+                echo '<h1>Hello</h1>';
+                echo '<p>Welcome who do you recommend</p>';
+            }
+            ?>
         </div>
         
 

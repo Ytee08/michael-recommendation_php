@@ -17,7 +17,7 @@
         $stmt->bindParam(':email', $email);
         $stmt->bindParam(':phone', $phone);
 
-
+ 
         $stmt->execute();
 
 
@@ -26,8 +26,12 @@
 
         sendRecommendationEmail($name, $skill, $phone, $email);
 
-        echo "Data inserted successfully";
+        // echo "Data inserted successfully";
         // exit();    
+
+        // After successful processing
+        header('Location: ../index.php?success=1');
+        exit();
     }
 
 ?>

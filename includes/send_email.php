@@ -184,7 +184,7 @@
                 <p>Hi $name,</p>
                 <p>We're reaching out because you were recommended as a fantastic creative person fit to join our company <span class="job">SMART TECH ENT</span>. 
                     We'd love to see your creativity in action, and we 
-                    believe your skills in $skill would make a big impact.
+                    believe your skills : <span class="job">$skill</span> would make a big impact.
                 </p>
                 <p>Looking forward to working with you!</p>
                 
